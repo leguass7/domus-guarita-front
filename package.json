@@ -10,6 +10,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "web": "yarn workspace web",
+    "ui": "yarn workspace ui",
     "clear-modules": "npm exec --workspaces -- npx rimraf node_modules && npx rimraf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -18,8 +20,7 @@
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
+    "yarn": ">=1.0.0",
     "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.12.0"
+  }
 }

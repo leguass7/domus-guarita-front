@@ -19,4 +19,14 @@ module.exports = {
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "off",
   },
+  overrides: [
+    {
+      files: ["**/*.js"],
+      rules: {
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+      },
+    },
+  ],
 };
